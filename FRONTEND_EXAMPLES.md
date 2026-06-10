@@ -118,7 +118,7 @@ accent against a near-black background.
 ```
 
 **Problems:**
-- Inter is the new Arial — default, invisible, forgettable
+- Inter used without a reason — not wrong for a dashboard, but here it wasn't chosen, it just appeared
 - Same font family for both title and subtitle — no contrast, no hierarchy
 - Could be any dashboard from any company
 
@@ -152,7 +152,7 @@ accent against a near-black background.
 }
 ```
 
-**Why this works:** Serif display + sans body creates contrast. The pairing feels deliberate, not assembled.
+**Why this works:** Serif display + sans body creates contrast. The pairing feels deliberate, not assembled. (Note: if this were a dense data dashboard where Inter's legibility at small sizes matters, that's a valid reason to use it — just name it.)
 
 ---
 
@@ -417,9 +417,9 @@ document.querySelectorAll('.feature').forEach(el => {
 | Principle | Anti-Pattern | Fix |
 |-----------|-------------|-----|
 | Aesthetic Direction | Silently picks "clean and modern" | State direction explicitly before any code |
-| Typography | Inter everywhere, same family for all text | Display + body pairing, chosen for context |
-| Color | `#3B82F6` blue, white cards, gray text `#6B7280` | One dominant + 1–2 accents, defined as CSS variables |
-| Layout | Centered title → 3-column cards → CTA | Asymmetry, hierarchy, grid-breaking |
+| Typography | Same font family everywhere, no contrast or hierarchy | Display + body pairing chosen for this project — or a justified reason for using one family |
+| Color | `#3B82F6` blue, white cards, gray text `#6B7280` used without thought | One dominant + 1–2 accents, defined as CSS variables, chosen for this palette |
+| Layout | Centered title → 3-column cards → CTA, picked by default | Asymmetry, hierarchy, grid-breaking — or a conventional layout named and justified |
 | Motion | Fade-in every element at 0.5s | Stagger only meaningful elements, animate on scroll |
 
 ## Key Insight
